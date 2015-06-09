@@ -45,11 +45,11 @@ public class Update extends HttpServlet {
 			String sql = "select * from kabukatable where code = " + update_id + "";
 
 			ResultSet rs = stmt.executeQuery(sql);
-			
-			
+
+
 			out.println(update_id);
-		    out.println("<a href=\"insert.html\">追加</a>");
-		    out.println("<a href=\"delete.html\">削除</a>");
+		    out.println("<a href=\"insert.html\">追加へ</a>");
+		    out.println("<a href=\"delete.html\">削除へ</a>");
 		    rs.close();
 		    stmt.close();
 
